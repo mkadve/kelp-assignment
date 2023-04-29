@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Login: {{user?.login}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-image [src]="user?.avatar_url" alt="{{user?.login}}">
+  
+      <p>Name: {{user?.name}}</p>
+      <p>Bio: {{user?.bio}}</p>
+  
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <p>Followers: {{user?.followers}}</p>
+        <p>Following: {{user?.following}}</p>
+      </div>
+  
+      <p><a href="{{user?.html_url}}" class="link" target="_blank">View on GitHub</a></p>
+    </mat-card-content>
+  </mat-card>
+  

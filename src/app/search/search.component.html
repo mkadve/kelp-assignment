@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput [(ngModel)]=searchText (keyup.enter)="search()" placeholder="Search for GitHub users">
+        <button mat-button (click)="search()" color="primary">Search</button>
+        </mat-form-field>
+        <div *ngIf="searchResults.length > 0">
+            <mat-list>
+              <mat-list-item *ngFor="let result of searchResults"  (click)="goToUserDetails(result.login)">
+                <a matLine>{{result.login}}</a>
+              </mat-list-item>
+            </mat-list>
+          </div>
+          
+          <div *ngIf="searchResults.length === 0">
+            <p>No results found.</p>
+          </div>
+        </mat-card-content>
+    </mat-card>
+  
