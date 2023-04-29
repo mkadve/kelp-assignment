@@ -15,10 +15,10 @@ import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
-import { HistoryComponent } from './history/history.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { SearchComponent } from './components/search/search.component';
+import { HistoryComponent } from './components/history/history.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
